@@ -235,8 +235,3 @@ function removeLocalTasks(task) {
 }
 
 
-// Animation for Check icon  - Complete
-// Animation for Deleteing - Complete
-// Styling - Complete
-// Filter Tasks - Completed
-// Local Storage - Complete
