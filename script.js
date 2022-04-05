@@ -239,4 +239,4 @@ function removeLocalTasks(task) {
 // Animation for Deleteing - Complete
 // Styling - Complete
 // Filter Tasks - Completed
-// Local Storage
+// Local Storage - Complete
