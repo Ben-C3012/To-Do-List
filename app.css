@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
 * {
     font-family: 'Roboto', sans-serif;
 
@@ -109,6 +111,8 @@ h1 {
     padding-top: 20px;
     margin-right: 20px;
     color: black;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    
     
     
     
@@ -130,10 +134,10 @@ form {
     justify-content: center;
 }
 
-
+/* To Fix */
 #wrapper {
     width: 90vw;
-    height: 100%;
+    height: 100vh;
     background-color: white;
     border-radius: 20px;
     margin: auto;
@@ -218,3 +222,4 @@ form {
 
 
 }
+
