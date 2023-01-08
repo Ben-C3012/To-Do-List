@@ -19,7 +19,6 @@ body {
     
 }
 
-
 #input {
     font-family: inherit;
     border: 1px solid lightgray;
@@ -28,7 +27,6 @@ body {
   height : 100%;
     
 }
-
 
 #button {
     padding: 0.5rem;
@@ -83,18 +81,13 @@ i:hover {
 .check-animation li {
     text-decoration: line-through;
     opacity: 0.5;
-    transition: all 0.5s ease;
-    
-    
+    transition: all 0.5s ease;    
 }
 
 .check-animation i {
     opacity: 0.5;
     
 }
-
-
-
 
 .fall {
     transform: translateY(8rem) rotateZ(20deg);
@@ -123,14 +116,12 @@ form {
     color: white;
 }
 
-
 .list-container {
     margin-top: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 
 #wrapper {
     width: 90vw;
@@ -141,9 +132,6 @@ form {
    
 }
 
-
-
-
 #select-todo {
     margin-left: 10px;
     font-size: 1rem;
@@ -151,10 +139,6 @@ form {
     cursor: pointer;
     padding: 4px;
 }
-
-
-
-
 
 @media(max-width:860px) {
 
@@ -199,6 +183,7 @@ form {
       padding: 0;
       overflow: none;
   }
+    
   .box-1 {
       display: flex;
       width: 300px;
