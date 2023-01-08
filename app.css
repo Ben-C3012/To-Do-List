@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
-
 * {
     font-family: 'Roboto', sans-serif;
 
@@ -7,13 +5,13 @@
 }
 
 body {
-    background: -webkit-linear-gradient(to right, #8E54E9, #4776E6);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #8E54E9, #4776E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to right, #8E54E9, #4776E6);  
+    background: linear-gradient(to right, #8E54E9, #4776E6); 
 }
 
 .task-container{
     display: flex;
-    width: 550px;
+    width: 800px;
     justify-content: space-between;
     transition: all 0.5s ease;
     border: 0.2px solid lightgray;
@@ -27,6 +25,7 @@ body {
     border: 1px solid lightgray;
     padding: 0.4rem;
     font-size: 1.2rem;
+  height : 100%;
     
 }
 
@@ -41,13 +40,10 @@ body {
 
 
 #button:hover {
-    border-color: lightblue;
-    border-style: groove;
+    border: 1px solid #004e98 ;
     cursor: pointer;
     
 }
-
-
 
 .list {
     list-style: none;
@@ -98,24 +94,25 @@ i:hover {
 }
 
 
+
+
 .fall {
     transform: translateY(8rem) rotateZ(20deg);
     opacity: 0;
 }
 
-
+#filter-input {
+    position: relative;
+    left: 250px;
+    bottom: 22px;
+}
 
 
 h1 {
     text-align: center;
     padding-top: 20px;
     margin-right: 20px;
-    color: black;
-    font-family: 'Kdam Thmor Pro', sans-serif;
-    
-    
-    
-    
+    color: black;    
 }
 
 
@@ -134,10 +131,10 @@ form {
     justify-content: center;
 }
 
-/* To Fix */
+
 #wrapper {
     width: 90vw;
-    height: 100vh;
+    height: 100%;
     background-color: white;
     border-radius: 20px;
     margin: auto;
@@ -148,8 +145,7 @@ form {
 
 
 #select-todo {
-    margin-top:  20px;
-    width: 200px;
+    margin-left: 10px;
     font-size: 1rem;
     font-family: inherit;
     cursor: pointer;
@@ -165,16 +161,18 @@ form {
    
 
     .task-container{ 
-        width: 400px;
+        width: 600px;
         max-width: 80%;
         
     }
 
+    #input-wrapper{
+        margin-right: 70px;
 
+    }
     li {
         font-size: 20px;
     }
-
     i {
         font-size: 10px;
         padding: 1rem
@@ -182,7 +180,7 @@ form {
     
 
   h1  {
-      font-size: 30px;
+      font-size: 19px;
   }
 
   #input{
@@ -193,12 +191,13 @@ form {
       width: 100vw;
       height: 100%;
       border-radius: 0px;
+      padding: 50px;
       
   }
   body {
       margin: 0;
       padding: 0;
-      overflow-x: none;
+      overflow: none;
   }
   .box-1 {
       display: flex;
@@ -208,18 +207,11 @@ form {
 
 }
  
-
-@media(max-width:350px){
+  
+@media(max-width: 600px) {
   .task-container {
-      width: 100px;
+      max-width: 70%;
   }
-
-  select {
-     width: 100px;
-  }
-
-
-
+   
 
 }
-
