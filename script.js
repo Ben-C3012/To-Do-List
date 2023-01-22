@@ -6,9 +6,6 @@ const button = document.querySelector('#button')
 const list = document.querySelector('.list')
 const filterSelect = document.querySelector('#select-todo')
 
-
-
-
 // Event Listeners 
 button.addEventListener('submit', (e)=>{
     e.preventDefault();
@@ -28,7 +25,6 @@ if(input.value === '' || input.value === ' ') {
     alert('Enter a Task')
     return
 }
-
 
 // Create div
 let taskContainer = document.createElement('div')
@@ -50,8 +46,6 @@ let li = document.createElement('li')
 // Append txt to li 
 li.append(txt)
 
-
-
 // Append li to div 
 taskContainer.appendChild(li)
 
@@ -62,7 +56,6 @@ saveLocalTasks(input.value)
 let checkIcon = document.createElement('i')
 let trashIcon = document.createElement('i')
 
-
 // Add class
 trashIcon.className = 'fa-solid fa-trash'
 checkIcon.className = 'fa-solid fa-check'
@@ -71,9 +64,6 @@ checkIcon.className = 'fa-solid fa-check'
 // Append icons to task container 
 taskContainer.appendChild(checkIcon)
 taskContainer.appendChild(trashIcon)
-
-
-
 
 // Clear input 
 input.value = ' '
@@ -99,8 +89,6 @@ function removeTask(e) {
    }
 
 
-
-
 // // Check task Function 
 function checkTask(e) {
     
@@ -111,8 +99,6 @@ function checkTask(e) {
         
     }
 }
-
-
 
 
 function filterTodo(e) {
@@ -146,8 +132,6 @@ function filterTodo(e) {
 
 }
 
-
-
 function saveLocalTasks(todo) {
     // Check if the local storage is empty
     let tasks
@@ -159,10 +143,6 @@ function saveLocalTasks(todo) {
     tasks.push(todo)
     localStorage.setItem('tasks', JSON.stringify(tasks) )
 } 
-
-
-
-
 
 function getTasks() {
     let tasks
@@ -184,30 +164,22 @@ list.appendChild(taskContainer)
 // Create Text Node 
 let txt = document.createTextNode(task)
 
-
-
 // Create li 
 let li = document.createElement('li')
 
 // Append txt to li 
 li.append(txt)
 
-
-
 // Append li to div 
 taskContainer.appendChild(li)
-
-
 
 // Create  Icons 
 let checkIcon = document.createElement('i')
 let trashIcon = document.createElement('i')
 
-
 // Add class
 trashIcon.className = 'fa-solid fa-trash'
 checkIcon.className = 'fa-solid fa-check'
-
 
 // Append icons to task container 
 taskContainer.appendChild(checkIcon)
@@ -215,9 +187,6 @@ taskContainer.appendChild(trashIcon)
 
      })
 }
-
-
-
 
 function removeLocalTasks(task) {
    // Check if the local storage is empty
@@ -233,5 +202,4 @@ function removeLocalTasks(task) {
     localStorage.setItem('tasks', JSON.stringify(tasks))
     
 }
-
 
